@@ -11,13 +11,12 @@ export default function LogInGoogle() {
 
   useEffect(() => {
     if (status === 'authenticated') {
-      router.push('/profile');
+      router.push('/home');
     }
   }, [status, router]);
 
   const handleSignIn = async () => {
-    const response = await signIn('google');
-    console.log(response);
+    await signIn('google');
   };
 
   return (
