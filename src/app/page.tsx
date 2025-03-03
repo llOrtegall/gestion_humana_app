@@ -2,6 +2,8 @@ import { auth } from "@/auth";
 import SigIngPage from "./signin/page";
 import HomePage from "./home/page";
 
+import LayoutMain from './home/layout'
+
 export default async function Home() {
   const session = await auth();
 
@@ -9,7 +11,9 @@ export default async function Home() {
     return <SigIngPage />;
   } else {
     return (
-      <HomePage />
+      <LayoutMain>
+        <HomePage />
+      </LayoutMain>
     )
   }
 }
