@@ -1,7 +1,7 @@
 import LogInGoogle from '../components/LogInGoogle';
 import Image from 'next/image';
 
-export default function SigIng() {
+export default function SigIngPage() {
   return (
     <div className='bg-red-200 h-screen w-full flex'>
       <section className='w-full h-full bg-white flex flex-col gap-10 p-12'>

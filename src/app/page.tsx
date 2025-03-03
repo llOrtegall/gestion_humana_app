@@ -1,8 +1,15 @@
-export default function Home() {
+import { auth } from "@/auth";
+import SigIngPage from "./signin/page";
+import HomePage from "./home/page";
 
-  return (
-    <div>
-      test
-    </div>
-  );
+export default async function Home() {
+  const session = await auth();
+
+  if (!session?.user) {
+    return <SigIngPage />;
+  } else {
+    return (
+      <HomePage />
+    )
+  }
 }
