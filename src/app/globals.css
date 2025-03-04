@@ -5,9 +5,9 @@
 }
 
 .activeLink {
-  @apply flex items-center gap-2 bg-green-100 px-2 py-1 rounded-md text-green-600;
+  @apply flex items-center gap-2 p-3 bg-green-100 font-semibold rounded-md text-green-600;
 }
 
 .inactiveLink {
-  @apply flex items-center gap-2 px-2 py-1 hover:text-blue-400 hover:bg-gray-100 rounded-md;
+  @apply flex items-center gap-2 p-3 hover:text-blue-400 hover:bg-gray-100 rounded-md;
 }

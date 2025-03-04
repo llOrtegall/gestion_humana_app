@@ -8,7 +8,7 @@ export default function Header() {
 
   return (
     <>
-      <figure className='flex items-center justify-center px-4 py-3 bg-gray-100 border-b border-gray-200'>
+      <figure className='flex items-center justify-center px-4 py-4 border-b border-gray-200'>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
           <path strokeLinecap="round" strokeLinejoin="round" d="m21 7.5-9-5.25L3 7.5m18 0-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
         </svg>
@@ -16,11 +16,11 @@ export default function Header() {
       </figure>
 
       <nav className='p-2 text-gray-600'>
-        <ul className='py-1 flex flex-col gap-2'>
+        <ul className='py-2 flex flex-col gap-2'>
           <li className=''>
             <Link
-              className={`${pathname === '/' ? 'activeLink' : 'inactiveLink'}`}
-              href='/'
+              className={`${pathname === '/home' ? 'activeLink' : 'inactiveLink'}`}
+              href='/home'
             >
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
