@@ -1,11 +1,13 @@
-import LogInGoogle from '../components/LogInGoogle';
+import LogInGoogle from './LogInGoogle';
 import Image from 'next/image';
 
 export default function SigIngPage() {
   return (
     <div className='bg-red-200 h-screen w-full flex'>
+
       <section className='w-full h-full bg-white flex flex-col gap-10 p-12'>
-        <div className='w-auto h-full flex flex-col px-64 py-20 justify-between'>
+        <div className='w-auto h-full flex flex-col px-40 2xl:px-48 py-20 justify-between'>
+
           <div className='flex flex-col gap-4'>
             <article className='flex gap-4 items-center'>
               <Image src='/logo.svg' alt='logo' width={10} height={10} className='w-10' />
@@ -46,15 +48,16 @@ export default function SigIngPage() {
           </div>
 
           <div>
-            <p className='text-sm text-gray-700'>Don t have an account yet? <a href=' '>Start free trial</a></p>
+            <p className='text-sm text-gray-700 text-center'>Don t have an account yet? <a href=' '>Start free trial</a></p>
           </div>
 
         </div>
       </section>
 
-      <section className='w-full bg-gray-100 p-12'>
+      <section className='w-full bg-gray-100 p-12 hidden xl:block'>
         logo
       </section>
+
     </div>
   );
 }
