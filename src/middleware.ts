@@ -6,10 +6,10 @@ export async function middleware(req: NextRequest) {
   const session = await auth();
   const { pathname } = req.nextUrl;
 
-
   if(pathname === '/login' && session){
     return NextResponse.redirect(new URL('/home/inicio/vistageneral', req.url));
   }
+  
   if(!session && pathname !== '/login'){
     return NextResponse.redirect(new URL('/login', req.url));
   }
