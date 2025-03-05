@@ -1,4 +1,5 @@
 import TableEmpleados from './table';
+import { ShowFormButton } from './ShowForm';
 
 export default function EmpleadosDirectory() {
   return (
@@ -19,14 +20,10 @@ export default function EmpleadosDirectory() {
         </div>
 
         <div className='flex items-center gap-8'>
-          <button className='flex items-center gap-2 text-blue-400 text-lg hover:text-blue-500 hover:underline hover:cursor-pointer'>
-            <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor' className='size-8'>
-              <path fillRule='evenodd' d='M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 9a.75.75 0 0 0-1.5 0v2.25H9a.75.75 0 0 0 0 1.5h2.25V15a.75.75 0 0 0 1.5 0v-2.25H15a.75.75 0 0 0 0-1.5h-2.25V9Z' clipRule='evenodd' />
-            </svg>
 
-            <p>AÑADIR EMPLEADO</p>
-          </button>
           <figure className='flex items-center gap-1'>
+            <ShowFormButton />
+            
             <button className='w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-500 hover:cursor-pointer text-white'>
               <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor' className='size-6'>
                 <path fillRule='evenodd' d='M2.625 6.75a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Zm4.875 0A.75.75 0 0 1 8.25 6h12a.75.75 0 0 1 0 1.5h-12a.75.75 0 0 1-.75-.75ZM2.625 12a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0ZM7.5 12a.75.75 0 0 1 .75-.75h12a.75.75 0 0 1 0 1.5h-12A.75.75 0 0 1 7.5 12Zm-4.875 5.25a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Zm4.875 0a.75.75 0 0 1 .75-.75h12a.75.75 0 0 1 0 1.5h-12a.75.75 0 0 1-.75-.75Z' clipRule='evenodd' />
