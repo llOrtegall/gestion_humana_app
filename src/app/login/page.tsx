@@ -1,4 +1,4 @@
-import LogInGoogle from './LogInGoogle';
+import LogInGoogle from '../components/LogInGoogle';
 import Image from 'next/image';
 
 export default function SigIngPage() {
