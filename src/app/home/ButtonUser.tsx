@@ -1,6 +1,6 @@
 'use client';
 
-import { OptionsUser } from '../components/OptionsUser';
+import OptionsUser from '../components/OptionsUser';
 import { Session } from 'next-auth';
 import { useState } from 'react';
 import Image from 'next/image';
