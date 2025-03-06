@@ -8,7 +8,7 @@ export async function middleware(req: NextRequest) {
 
 
   if(pathname === '/login' && session){
-    return NextResponse.redirect(new URL('/home', req.url));
+    return NextResponse.redirect(new URL('/home/inicio/vistageneral', req.url));
   }
   if(!session && pathname !== '/login'){
     return NextResponse.redirect(new URL('/login', req.url));
