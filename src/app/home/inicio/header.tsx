@@ -20,7 +20,7 @@ export default function HeaderInicio() {
           className='flex flex-col items-center'
           href='/home/inicio/vistageneral'
         >
-          <p className='px-6 py-4'>Directorio</p>
+          <p className='px-6 py-4'>Vista General</p>
           {
             pathname.includes('vistageneral') && (
               <span className='absolute bottom-0 h-1 bg-green-300 w-full'></span>
@@ -33,7 +33,7 @@ export default function HeaderInicio() {
           className='flex flex-col items-center'
           href='/home/inicio/reuniones'
         >
-          <p className='px-6 py-4'>Directorio</p>
+          <p className='px-6 py-4'>Objetivos</p>
           {
             pathname.includes('reuniones') && (
               <span className='absolute bottom-0 h-1 bg-green-300 w-full'></span>
@@ -46,7 +46,7 @@ export default function HeaderInicio() {
           className='flex flex-col items-center'
           href='/home/inicio/objetivos'
         >
-          <p className='px-6 py-4'>Directorio</p>
+          <p className='px-6 py-4'>Reuniones</p>
           {
             pathname.includes('objetivos') && (
               <span className='absolute bottom-0 h-1 bg-green-300 w-full'></span>

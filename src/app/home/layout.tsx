@@ -7,9 +7,8 @@ export default async function Layout({ children }: { children: React.ReactNode }
 
   return (
     <section className='flex h-screen'>
-      <header className='w-3xs border-r border-gray-200'>
-        <Header />
-      </header>
+
+      <Header />
 
       <main className='w-full relative'>
 
