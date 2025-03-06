@@ -19,5 +19,5 @@ export async function middleware(req: NextRequest) {
 
 // Configurar las rutas que deben pasar por el middleware
 export const config = {
-  matcher: ['/home/:path*', '/profile/:path*', '/login'],
+  matcher: ['/home/:path*', '/profile/:path*', '/login', '/'],
 };
