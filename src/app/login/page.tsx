@@ -1,4 +1,4 @@
-import LogInGoogle from '../components/LogInGoogle';
+import { LoginGoogle } from '@/lib/actions/auth';
 import Image from 'next/image';
 
 export default function SigIngPage() {
@@ -18,7 +18,12 @@ export default function SigIngPage() {
 
           <div className='flex flex-col gap-4'>
 
-            <LogInGoogle />
+            <button
+              onClick={LoginGoogle}
+              className='w-full flex items-center justify-center gap-2 border px-12 py-3 rounded-md border-gray-200 cursor-pointer hover:bg-blue-50'>
+              <Image src='/google.svg' alt='google' width={10} height={10} className='w-6' />
+              <span> Continue with Google</span>
+            </button>
 
             <div className='flex items-center gap-2'>
               <div className='w-full h-0.5 border border-gray-300'></div>
