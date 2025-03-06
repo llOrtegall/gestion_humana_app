@@ -4,6 +4,7 @@ export default function LogOutGoogle() {
 
   return (
     <form
+      className=''
       action={async () => {
         'use server';
         await signOut();
