@@ -1,19 +1,13 @@
 import { auth } from "@/auth";
-import SigIngPage from "./signin/page";
-import HomePage from "./home/page";
-
-import LayoutMain from './home/layout'
+import { redirect } from "next/navigation";
 
 export default async function Home() {
   const session = await auth();
 
-  if (!session?.user) {
-    return <SigIngPage />;
+  if (session){
+    redirect('/login');
   } else {
-    return (
-      <LayoutMain>
-        <HomePage />
-      </LayoutMain>
-    )
+    redirect('/home');
   }
+
 }
