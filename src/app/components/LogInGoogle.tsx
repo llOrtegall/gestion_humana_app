@@ -1,12 +1,12 @@
-import { signIn } from "@/auth";
-import Image from "next/image";
+import { signIn } from '@/auth';
+import Image from 'next/image';
 
 export default function LogInGoogle() {
 
   return (
     <form
       action={async () => {
-        "use server"
+        'use server'
         await signIn('google')
       }}
     >
