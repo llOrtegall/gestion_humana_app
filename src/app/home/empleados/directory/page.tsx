@@ -1,3 +1,5 @@
+import TableEmpleados from "./table";
+
 export default function EmpleadosDirectory() {
   return (
     <section className="p-4 flex flex-col gap-6 bg-gray-100">
@@ -109,9 +111,8 @@ export default function EmpleadosDirectory() {
 
       </section>
 
-      <div className="bg-pink-100 px-4 py-2">
-        content
-      </div>
+
+      <TableEmpleados />
 
     </section>
   )
