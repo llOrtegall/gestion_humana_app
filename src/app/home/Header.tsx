@@ -15,7 +15,7 @@ export default function Header() {
         <span className='font-bold'>G A N E</span>
       </figure>
 
-      <nav className='flex flex-col justify-between p-2 text-gray-600'>
+      <nav className='flex flex-col justify-between p-2 text-gray-600 h-[calc(100%-4rem)]'>
 
         <ul className='py-2 flex flex-col gap-2'>
           <li className=''>
