@@ -44,6 +44,7 @@ export default function EmpleadosDirectory() {
       </section>
 
       <section className='border border-gray-200 rounded-xl bg-white'>
+
         <div className='flex'>
           <div className='flex gap-4 px-6 py-4 border-r border-gray-200'>
             <p>Estado: </p>
@@ -100,7 +101,8 @@ export default function EmpleadosDirectory() {
 
           </div>
         </div>
-        <div className='flex items-center border-t border-gray-200 bg-gray-100'>
+
+        <div className='flex items-center  bg-gray-100 rounded-b-xl'>
           <p className='flex-1 pl-4 text-gray-600'>No se ha aplicado ningún filtro</p>
           <div className='bg-white px-6 py-4 text-gray-400'>
             <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' strokeWidth={2.2} stroke='currentColor' className='size-6'>
