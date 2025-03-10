@@ -1,4 +1,4 @@
-import HeaderAjustes from "./header";
+import HeaderAjustes from './header';
 
 export default async function Layout({ children }: { children: React.ReactNode }) {
   return (
