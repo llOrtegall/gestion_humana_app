@@ -13,15 +13,15 @@ export const LogoutGoogle = async () => {
 
 export async function sigup(state: FormState, formData: FormData) {
   // validate form fields
-  const validatedFields = SignupFormSchema.safeParse({
+  const { success, data, error } = SignupFormSchema.safeParse({
     email: formData.get('email'),
     password: formData.get('password'),
   })
 
-  if (!validatedFields.success) {
-    return { errors: validatedFields.error.flatten().fieldErrors }
+  if (!success) {
+    return { errors: error.flatten().fieldErrors }
   }
 
-  console.log(validatedFields.data);
+  console.log(data);
 
 }
