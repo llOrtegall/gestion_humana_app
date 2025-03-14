@@ -22,6 +22,27 @@ export async function sigup(state: FormState, formData: FormData) {
     return { errors: error.flatten().fieldErrors }
   }
 
-  console.log(data);
+  const userData = {
+    email: data.email,
+    password: data.password,
+    app: 'test'
+  }
+
+  // consultar api
+  try {
+    const response = await fetch('http://localhost:4000/api/v1/login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(userData),
+    })
+
+    await response.json().then(data => console.log(data.message))
+
+  } catch (error) {
+    console.error('Error:', error)
+  }
+
 
 }
